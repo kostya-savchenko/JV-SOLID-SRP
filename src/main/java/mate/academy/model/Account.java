@@ -57,7 +57,6 @@ public class Account {
     }
 
     public enum Type {
-        REGULAR, GOLD, PLATINUM
     }
 
 }

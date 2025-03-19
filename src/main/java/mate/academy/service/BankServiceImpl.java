@@ -20,7 +20,6 @@ public class BankServiceImpl implements BankService {
         Account toAccount = accountDao.get(toAccountNumber);
 
         //        2. Transfer money between accounts
-        BigDecimal newValueFrom = fromAccount.getAmount().subtract(amount);
         fromAccount.setAmount(newValueFrom);
 
         BigDecimal newValueTo = toAccount.getAmount().add(amount);
